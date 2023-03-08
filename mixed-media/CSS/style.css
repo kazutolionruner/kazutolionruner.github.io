@@ -1,0 +1,12 @@
+body {
+    background: lightblue;
+    width:300px;
+    border: 15px solid cyan;
+    padding: 50px;
+    margin: 20px auto;
+}
+
+table {
+    border: 2px solid black;
+
+}
