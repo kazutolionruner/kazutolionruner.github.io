@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Navigation Bar and Media Queries</title>
+        <style>
+            nav {
+                background: green;
+                top: 0;
+                left: 0;
+                width: 100%;
+                position: fixed;padding: 10px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                z-index: 999;
+
+            }
+
+            nav a {
+                color: greenyellow;
+                font-weight: bold;
+                background: #333;
+                padding: 10px;
+                margin-right: -5px;
+            }
+
+            body {
+                background: lightblue;
+                color: black;
+
+            }
+
+            /* Media query for screens <= 992px (~tablet) */
+            @media screen and (max-width: 992px) {
+                body { background: darkslategray; color: white; }
+                nav a { 
+                    display: block; 
+                    margin-right: -10px;
+                    text-align: center; 
+                    padding: -5px;
+                    border: 1px solid white;
+                }
+
+                #top { padding-top: 30vh; }
+            }
+
+            @media screen and (max-width: 600px) {
+                body { background: darkblue; color: white; }
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <a href="#top">Top</a>
+            <a href="#bottom">Bottom</a>
+            <a href="#link1">Link 1</a>
+            <a href="#link2">Link 2</a>
+            <a href="#link3">Link 3</a>
+        </nav>
+
+        <div id="top">
+            <br/><br/>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a 
+                varius nulla. Pellentesque faucibus eros vitae enim ultricies, sit 
+                amet scelerisque nisl lacinia. Pellentesque pharetra ligula ligula, 
+                nec eleifend ligula ultrices malesuada. Pellentesque ut turpis et 
+                lorem aliquet aliquet et in lectus. Sed lobortis purus id diam mattis 
+                vehicula. Vestibulum turpis nisi, iaculis vitae tempus quis, lobortis 
+                sed diam. Etiam commodo faucibus lectus, a volutpat leo accumsan ac.
+                Nam venenatis tristique metus eu finibus. Class aptent taciti sociosqu 
+                ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam 
+                ac ipsum at neque molestie feugiat. Cras massa urna, commodo in ligula 
+                eget, posuere pulvinar leo. Etiam sagittis aliquet diam id facilisis. 
+                Fusce arcu ante, gravida ac convallis eget, convallis vitae metus. Sed 
+                sagittis eros mauris. Nullam viverra lobortis malesuada. Nullam mollis 
+                nisi pharetra, tristique enim ut, maximus lectus. Mauris tortor metus, 
+                semper id sem finibus, semper aliquam magna. Morbi sem quam, sodales 
+                non mi sit amet, maximus volutpat nibh. Nam ex purus, feugiat sit amet 
+                tincidunt vitae, consectetur ut sem. Vivamus et turpis sit amet urna 
+                semper mollis in ut ex. Etiam vehicula auctor porta. Pellentesque eu 
+                tempus leo. Vivamus ornare, leo in convallis porta, arcu nunc condimentum 
+                nunc, eleifend finibus nunc odio vitae lectus. Sed finibus bibendum 
+                libero, maximus congue nisi lacinia at. Curabitur quis dapibus ante. 
+                Nunc euismod lobortis ultrices. Nulla facilisi. Vivamus ac vehicula 
+                orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin 
+                at lobortis odio, vel placerat risus. Interdum et malesuada fames ac 
+                ante ipsum primis in faucibus. Nulla consequat et nibh vitae bibendum.
+                Fusce eu quam urna. Nam in vehicula sapien, quis molestie nisi. Etiam 
+                eget tincidunt nunc. Curabitur rhoncus tortor eu metus ullamcorper 
+                pulvinar. Mauris scelerisque pretium elementum. Donec luctus ante massa, 
+                at ultricies velit accumsan vel. Ut non scelerisque lectus. Sed nisi 
+                lectus, porta eget blandit scelerisque, pharetra sed ipsum. Pellentesque 
+                interdum erat ut finibus pharetra. Aenean venenatis turpis varius enim 
+                cursus malesuada. Pellentesque vitae elit purus. Donec eros orci, 
+                pellentesque vitae pulvinar et, volutpat ut justo. Suspendisse euismod 
+                turpis non elit convallis tempus. Cras venenatis est sem, sit amet 
+                ullamcorper odio egestas in. Nulla ut congue nisl, ac euismod odio. 
+                Fusce faucibus interdum nibh tempor suscipit.
+            </p>
+        </div>
+
+        <div id="bot">
+            <h>This is the hbottom of the page!</h>
+        </div>
+    </body>
+</html>
