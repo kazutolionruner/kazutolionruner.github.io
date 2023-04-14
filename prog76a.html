@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>prog76a</title>
+    </head>
+
+    <body>
+        <label for="num">Enter the number between 1 and 9 (inclusive): </label>
+        <input type="number" id="num" name="num">
+        <button onclick="surpise();">Calculate</button>
+        <button onclick="reset();">Reset</button>
+        <p id="out"></p>
+        
+        <script>
+            function reset(){
+                var p = document.getElementById("out");
+                p.innerText = ""; // reset output //
+            }
+
+            function surprise() {
+                var num = Number(document.getElementById("num").value);
+                var p = document.getElementById("out");
+                p.innerText = ""; // reset output //
+
+                if (num >= 1 && num <= 9){
+                    var num9 = num * 9;
+                    p.innerText+= num + "\n"; // "\n" means line break </br>
+                    p.innerText+= "x 9 \n";
+                    p.innerText+= "_____________\n";
+                    p.innerText+= num9 + "\n";
+
+                    var numf = num9 * 12345679
+                    p.innerText+= num9 + "\n"; // "\n" means line break </br>
+                    p.innerText+= "x 12345679 \n";
+                    p.innerText+= "_____________\n";
+                    p.innerText+= numf + "\n";
+
+                } else {
+                    alert("number must be between 1 and 9");
+                }
+
+                var out = document.getElememntById("out");
+                out.innerText = "";
+            }
+        </script>
+        
+    </body>
+</html>
