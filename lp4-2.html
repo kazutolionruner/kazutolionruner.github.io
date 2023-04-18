@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LP4-2</title>
+    </head>
+
+    <body>
+        <label for="weight">Enter package weight in kilograms: </label>
+        <input type="number" id="weight" name="weight" min="0">
+        
+        <label for="length">Enter package length in centimeters: </label>
+        <input type="number" id="length" name="length" min="0">
+
+        <label for="width">Enter package width in centimeters: </label>
+        <input type="number" id="width" name="width" min="0">
+
+        <label for="height">Enter package height in centimeters: </label>
+        <input type="number" id="height" name="height" min="0">
+        
+        <button onclick="check()">Check package for problems</button>
+        <p id="opt"></p>
+
+        <script>
+            function check(){
+                var weight = Number(document.getElementById("weight").value);
+                var length = Number(document.getElementById("length").value);
+                var width = Number(document.getElementById("width").value);
+                var height = Number(document.getElementById("height").value);
+                var num = 0;
+                var mul = length * width * height;
+
+                if (weight > 0 && weight <= 27) {
+
+                } else {
+                    num += 1;
+                }
+
+                if (length > 0 && width > 0 && height > 0 && mul <100000) {
+
+                } else if (len){
+                    num += 2;
+                }
+
+
+
+                if (num >= 0) {
+                    p.innerText = "Enter package weight in kilograms:";
+                    p.innerText = "Enter package length in centimeters:";
+                    p.innerText = "Enter package width in centimeters:";
+                    p.innerText = "Enter package height in centimeters:";
+                } 
+                
+                if (num = 1) {
+                    p.innerText = "Too heavy";
+                } else if (num = 2) {
+                    p.innerText = "Too large";
+                } else {
+                    p.innerText = "Too large and Too heavy"
+                }
+
+            }
+            
+
+        </script>
+    </body>
+</html>
