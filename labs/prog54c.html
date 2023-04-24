@@ -12,9 +12,10 @@
         <input type="number" id="rad" name="rad"><br/>
 
         <button onclick="
+            var rad = document.getElementById('rad').value;
             var pi = 3.14159;
-            var area= ;
-            var circ= ;
+            var area= pi * rad**2;
+            var circ= 2 * pi * rad;
             
         ">Calculate Area and Circumfrance</button>
 

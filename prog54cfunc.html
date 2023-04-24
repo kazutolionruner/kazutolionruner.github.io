@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <label for="rad">Radius</label>
+        <input type="number" id="rad" name="rad">
+
+        <button onclick="calc()">Calculate</button>
+        <button onclick="reset()">Reset</button>
+        <p id="out" style="background: green; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; padding: 15px;"></p>
+
+        <script>
+            function reset() {
+                document.getElementById("rad").value="";
+                document.getElementById("out").innerHTML="";
+            }
+
+            function getPerim(radius) {
+                var perim = 2 * pi * radius;
+                return perim;
+            }
+
+            function getArea(radius) {
+                var area = pi * (radius**2);
+                return area;
+            }
+
+            function calc() {
+                var rad = Number(document.getElementById("rad").value);
+                var pi = 3.14159;
+                var area = getarea(rad);
+                var perim = getPerim(rad);
+                document.getElementById("out").innerText = "Area: " + area + "\nPerimeter: " + perim;
+
+            }
+
+        </script>
+    </body>
+</html>

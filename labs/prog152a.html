@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <p id="out"></p>
+        <script>
+            var msg = "";
+            var sum = 0;
+            for (var three = 3; three <= 9669; three+= 3){
+                sum += three;
+                if (three < 9669){
+                    msg += three + " + ";
+                } else {
+                    msg += three + " = " + sum;
+                }
+                
+            }
+
+            document.getElementById("out").innerHTML = msg;
+        </script>    
+    </body>
+</html>
