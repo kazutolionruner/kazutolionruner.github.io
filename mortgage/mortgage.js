@@ -1,10 +1,15 @@
-var homeprice = 0;
-var downpay = 0;
-var dpp = 0;
-var intrat= 0;
-var proptax = 0;
-var HOI = 0;
-var HOAtax = 0;
-var PMI = 0;
+var p = Number(document.getElementById("pri"));
+var r= Number(document.getElementById("intrate"));
+var t = Number(document.getElementById("numy"));
+var m = Number(document.getElementById("monpay"));
+var n = 12;
 
+function getSolve (p, r, t, m, n) {
+    var d = r/n;
+    var po = (1 + d)**(n*t);
+    var eq = p*(po) - (m*(po - 1)) / d;
+    return eq;
+}
 
+var result = getSolve(p,r,t,m,n);
+document.writeln("mortgage: " + result +"</br>");

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <p id="out" style="background: gray; "></p>
+        <script>
+            function getArea_Perim(length, width) {
+                var perim = length * 2 + width * 2;
+                var area = length * width;
+                return [area, perim];
+            }
+
+            // Make random numbers 
+            var num1 = Math.round(Math.random() * 10 + 1);
+            var num2 = Math.round(Math.random() * 10 + 1);
+            var AandP = getArea_Perim(num1, num2);
+            var area = AandP[0];
+            var perim = AandP[1];
+            document.writeln("Length: " + num1 +"</br>");
+            document.writeln("Width: " + num2 +"</br>");
+            document.writeln("Area: " + area +"</br>");
+            document.writeln("Perimeter: " + perim +"</br>");
+
+        </script>
+    </body>
+</html>
