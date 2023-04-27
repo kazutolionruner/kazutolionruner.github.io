@@ -11,5 +11,7 @@ function getSolve (p, r, t, m, n) {
     return eq;
 }
 
-var result = getSolve(p,r,t,m,n);
-document.writeln("mortgage: " + result +"</br>");
+function calc() {
+    var result = getSolve(p,r,t,m,n);
+    document.writeln("mortgage: " + result +"</br>");
+}
