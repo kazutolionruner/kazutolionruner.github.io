@@ -15,3 +15,11 @@ function calc() {
     var result = getSolve(p,r,t,m,n);
     document.writeln("mortgage: " + result +"</br>");
 }
+
+function reset() {
+    document.getElementById("out").innerHTML = "";
+    document.getElementById("pri").value = "";
+    document.getElementById("intrate").value = "";
+    document.getElementById("numy").value = "";
+    document.getElementById("monpay").value = "";
+}

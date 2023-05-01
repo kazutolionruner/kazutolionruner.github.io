@@ -10,19 +10,24 @@
 
     <body>
         <label for="pri">Principal: </label>
-        <label type="number" id="pri" name="pri"></label>
+        <input type="number" id="pri" name="pri" style="background: darkgrey; color: green;"></input>
+        </br>
 
         <label for="intrate">Interest Rate: </label>
-        <label type="number" id="intrate" name="intrate"></label>
+        <input type="number" id="intrate" name="intrate"></input>
+        </br>
 
         <label for="numy">Number of Years: </label>
-        <label type="number" id="numy" name="numy"></label>
+        <input type="number" id="numy" name="numy"></input>
+        </br>
 
         <label for="monpay">Monthly Payment: </label>
-        <label type="number" id="monpay" name="monpay"></label>
+        <input type="number" id="monpay" name="monpay"></input>
+        </br>
 
         <p id="out" style="background: grey;"></p>
         <button onclick="calc()">Calculate</button>
+        <button onclick="reset()">Reset</button>
         
     </body>
 </html>
