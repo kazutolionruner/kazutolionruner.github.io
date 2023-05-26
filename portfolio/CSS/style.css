@@ -1,0 +1,21 @@
+.status {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    color: blue;
+    align-items: center;
+    justify-content: center;
+}
+
+.about {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    color: green;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .static { background: red; }
+.bg1::after { background: url("https://picsum.photos/900/700") }
+.bg2::after { background: url("https://picsum.photos/800/600") } */
