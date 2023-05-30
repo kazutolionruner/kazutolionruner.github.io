@@ -1,3 +1,10 @@
+.wrapper {
+    height: 100vh; /* 100% of the viewport height */
+    overflow-x: hidden; /* prevent horizontal scroll */
+    overflow-y: auto; /*  */
+    perspective: 2px; /* simulate distance from viewport */
+}
+
 .status {
     position: relative;
     height: 100vh;
@@ -15,6 +22,9 @@
     align-items: center;
     justify-content: center;
 }
+
+body, html { overflow: hidden }
+* { margin: 0; padding: 0; }
 
 /* .static { background: red; }
 .bg1::after { background: url("https://picsum.photos/900/700") }

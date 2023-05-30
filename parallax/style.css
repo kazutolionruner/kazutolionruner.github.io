@@ -1,6 +1,6 @@
 .wrapper {
     height: 100vh; /* 100% of the viewport height */
-    overflow-x: hidden; /* prevent horixontal scroll */
+    overflow-x: hidden; /* prevent horizontal scroll */
     overflow-y: auto; /*  */
     perspective: 2px; /* simulate distance from viewport */
 
