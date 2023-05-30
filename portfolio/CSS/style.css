@@ -1,24 +1,32 @@
-.wrapper {
-    height: 100vh; /* 100% of the viewport height */
-    overflow-x: hidden; /* prevent horizontal scroll */
-    overflow-y: auto; /*  */
-    perspective: 2px; /* simulate distance from viewport */
+body {
+    color: #fddde3;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000000;
+    width:300px;
+    padding: 50px;
+    margin: 20px auto;
 }
 
-.status {
+#popmenu {
+    background-color: #067560;
+    width: auto;
+    padding: 50px;
+    margin: 20px auto;
+}
+
+#status {
     position: relative;
-    height: 100vh;
+    height: 5vh;
     display: flex;
     color: blue;
     align-items: center;
     justify-content: center;
 }
 
-.about {
+#about {
     position: relative;
-    height: 100vh;
+    height: 10vh;
     display: flex;
-    color: green;
     align-items: center;
     justify-content: center;
 }
