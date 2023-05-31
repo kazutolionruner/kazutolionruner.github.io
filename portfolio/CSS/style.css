@@ -2,21 +2,25 @@ body {
     color: #fddde3;
     font-family: Arial, Helvetica, sans-serif;
     background: #000000;
-    width:300px;
-    padding: 50px;
-    margin: 20px auto;
+    padding: 0px;
+    margin: 0px auto;
 }
 
+#comp {
+
+}
 #popmenu {
     background-color: #067560;
-    width: auto;
-    padding: 50px;
-    margin: 20px auto;
+    width: 100% auto;
+    padding: 25px;
+    margin: 0px auto;
 }
 
 #status {
     position: relative;
     height: 5vh;
+    padding-left: 10px;
+    margin: 0px auto;
     display: flex;
     color: blue;
     align-items: center;
@@ -26,13 +30,20 @@ body {
 #about {
     position: relative;
     height: 10vh;
-    display: flex;
+    padding-left: 10px;
+    display: ;
     align-items: center;
     justify-content: center;
 }
 
-body, html { overflow: hidden }
-* { margin: 0; padding: 0; }
+.sides {
+
+}
+
+.cent { align-items: center; }
+.img1 { float: left; }
+.img2 { float: right; }
+
 
 /* .static { background: red; }
 .bg1::after { background: url("https://picsum.photos/900/700") }
